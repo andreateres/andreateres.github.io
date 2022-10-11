@@ -1,0 +1,127 @@
+a.pseudo:visited {
+    color: blue;
+}
+
+a.pseudo:hover {
+    color: red;
+}
+
+a.pseudo:active {
+    color: black
+}
+
+h2.titlebox {
+    background-color: lightsteelblue;
+    width: 350px;
+    height: 32px;
+    border: 18px solid black;
+    padding: 5px;
+    margin: 25px;
+
+}
+
+a.button1 {
+    background-color: lavender;
+    color: purple;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: navy;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+}
+
+h3 {
+    text-shadow: 2px 2px 8px navy;
+}
+
+p {
+    color: black;
+    font:
+}
+
+ul {
+    color: purple;
+}
+
+img {
+    width: 400px;
+    height: 250px;
+    border: 1px;
+    border-radius: 30px;
+}
+
+#corner {
+    border-radius: 15px 50px;
+    padding: 20px;
+    width: 400px;
+    height: 35px;
+}
+
+#ridge {
+    border-style: ridge;
+    width: 100px;
+    background-color:lavenderblush;
+}
+
+li.pseudo:hover {
+    background-color: yellow;
+    padding: 3px;
+    height: 20px;
+  }
+
+nav.sticky {
+    position: sticky;
+    top: 0;
+    padding: 3x;
+    background-color: tan;
+    border: 1px solid grey;
+}
+
+a.pseudo {
+    text-decoration: none;
+}
+
+/* figure out how to only make it go left and right */
+.button1 {
+    width: 100px;
+    height: 2px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 700px;
+    right: 960px;
+    width: 700px;
+    height: 400px;
+    border: 3px solid purple;
+  }
+  
+  @keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:0px; top:0px;}
+    75%  {left:0px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
+
+
+/*
+div {
+    background: red;
+}
+
+span {
+    background: yellow;
+    display: block;
+}
+*/
