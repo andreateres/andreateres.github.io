@@ -1,26 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="media.html">Media</a>
-        <a href="tags.html">Tags</a>
-        <a href="nested.html">Nested</a>
-    </nav>
+   <head>
+    <title>Resources</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="background">
+
+<h1 class="header1" >Can I Post This?</h1>
+
+<nav class="navigation" class="sticky">
+      <a class=pseudo href="index.html">Home</a>
+      <a class=pseudo href="media.html">Can I Publish This?</a>
+      <a class=pseudo href="tags.html">FAQ and Resources</a>
+      <a class=pseudo href="nested.html">About</a>
+      <a class=pseudo href="about.html">Contact</a>
+  </nav>
+
+  
+ <div class="column side">
+    <img src="salmon3.PNG">
+ </div>
+  
+ 
+ 
+ 
+  <div class="column middle">
+ <h1 class="header3">Frequently Asked Questions</h1>
+  <button class="collapsible">Who can censor my publication?</button>
+  <div class="content">
+    <p>If a university funds a student publication, can they censor it like any other publisher? The answer is <b>no, not at a public school.</b> If a school allows students to serve as editors, the First Amendment limits the school's censorship abilities. demanding prior review, limiting circulation, and suspending finanical support are prohibited to public schools.</p>
+  </div>
+  <button class="collapsible">What should I do if a community member requests for a story to be taken down?</button>
+  <div class="content">
+    <p>Unless the material is unlawful (includes defamatory content or invades an individual's privacy), the publication is not obligated to take down. Material that is lawful at the time of publication does not become improper with the passage of time, meaning a publication cannot get in trouble for not updating a past news article or other outdated information.</p>
+  </div>
+  <button class="collapsible">Is my newspaper or website legally responsible for online comments?</button>
+  <div class="content">
+    <p>Generally, no. No provider of a website is responsible for text provided by a non-staff user, except in cases of copyright infringement (according to The Safe Harbor of the Communications Decency Act).</p>
+  </div>
+  <h1 class="header3">Resources</h1>
+<p class="paragraph1"><b>Libel</b></p>
+<ul>
+  <li><a href="https://splc.org/2019/09/media-law-presentation-libel-law/">Libel Law Presentation: Student Press Law Center (SPLC)</a></li>
+  <li><a href="https://www.freedomforuminstitute.org/first-amendment-center/primers/libellaw/">Guick Guide to Libel Law: Freedom Forum Institute</a></li>
+</ul>
+<p class="paragraph1"><b>Privacy</b></p>
+<ul>
+  <li><a href="https://www.rcfp.org/resources/first-amendment-handbook/#invasion-of-privacy">Reporters Committee for Freedom of the Press's guide to privacy law: First Amendment Handbook.</a></li>
+  <li><a href="https://splc.org/2020/04/privacy-law-presentation/">Privacy Law Presentation: Student Press Law Center (SPLC)</a></li>
+</ul>
+<p class="paragraph1"><b>Copyright</b></p>
+<ul>
+  <li><a href="https://splc.org/2019/09/pubfellowsplc-org/">Copyright Law Presentation: Student Press Law Center (SPLC)</a></li>
+  <li><a href="https://www.copyright.gov/fair-use/more-info.html">Fair Use in Copyright Law: U.S. Copyright Office's Fair Use Index</a></li>
+</ul>
+
+
+
+
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+
+<!--
+        </nav>
 
     
             <header>
                 <h1>Guide to SKAM España</h1>
             </header>
             <!--this is meant to function as a "header banner" across the page-->
-            <!--<img src="skambanner.jpg" alt="Skam ESPANA banner with Amira, protagonist of season 4">-->
+            <!--<img src="skambanner.jpg" alt="Skam ESPANA banner with Amira, protagonist of season 4">
 
 
             <style>
                 h2 {color:rgb(154, 154, 35);}
                 p {color:navy;}
             </style>
-
-
+-->
+<!--
             <body>
             <h2>What is SKAM España?</h2>
             
@@ -28,14 +102,14 @@
             
             <ul>
                 <li><cite><span style="color:rgb(17, 0, 255);font-weight:bold">SKAM España</span></cite> is a Spanish teen drama television series based on the <span style="color:rgb(17, 0, 255);font-weight:bold">Norwegian television series 'SKAM.'</span></li>
-                <!--the "cite" tag under formatting is meant to designate the words "SKAM Espana" as the formal title of the multimedia series. Second reference and beyond use "SKAM," therefore the title is not italicized.-->
+                <!--the "cite" tag under formatting is meant to designate the words "SKAM Espana" as the formal title of the multimedia series. Second reference and beyond use "SKAM," therefore the title is not italicized.
                 <li>Its four seasons originally aired from September 2018 to October 2020 on Movistar+</li>
                 <li>Currently there exist seven remakes of the original series, including the Spain remake.</li>
                 <li>Each remake follows the same characters, though the conflicts they face are shaped by each country's culture.</li>
                 <li>Each season of any SKAM remake follows a different character.</li>
             </ul>
             </div>
-            
+        
             <details>
                 <summary>Season Guide</summary>
                 <p>
@@ -44,7 +118,8 @@
                         <li><mark>Cris</mark></li>
                         <li>Nora</li>
                         <li><mark>Amira</mark></li>
-                        <!--only the two characters discussed on this page are highlighted-->
+                        <!--only the two characters discussed on this page are highlighted
+                    
                     </ol>
                 </p>
               </details>
@@ -58,7 +133,7 @@
                 <source src="Tráiler SKAM España_ Temporada 4 _ Movistar+.mp4" type="video/mp4">
               </video>-->
             </div>
-            <!--this video shows the trailer for SKAM Espana, season 4 (the remake's final season)-->
+            <!--this video shows the trailer for SKAM Espana, season 4 (the remake's final season)
             
             <p>SKAM's most recent season follows the character Amira, <wbr>who struggles <br>with balancing <q>school, friends, love, and her devotion to Islam as a practicing muslim.</q></p>
             
@@ -66,14 +141,15 @@
 
             <div>
             <!--<iframe src="https://www.youtube.com/embed/15RSQkf8Tqk" width="350" height="200"></iframe>-->
-            <!--this video is a clip from season 4, where Amira expresses feeling stressed over dating as a muslim woman-->
+            <!--this video is a clip from season 4, where Amira expresses feeling stressed over dating as a muslim woman
+        
             </div>
             <h3>Images from Season 4</h3>
             <!--<picture>
                 <img src="skamamirablanco.jpg" width="300" height="170">
                 <img src="skamamirakasim.jpg" width="300" height="170">
                 <img src="skamamiradani.jpg" width="300" height="170">
-              </picture>-->
+              </picture>
             </section>
 
             <section>
@@ -83,7 +159,7 @@
             <!--<figure>
                 <img src="crisyamira.png" width="450" height="250">
                 <figcaption>Fig.1 - Cris and Amira hug in the school cafeteria.</figcaption>
-            </figure>-->
+            </figure>
             <p>Season 2 of SKAM was praised by fans for the way it dealt with heavy topics such as infidelity, mental health, <br>sexuality, religion and sexual assault.</p>
             <p>The second season follows the character Cris, and her inability to deal with serious problems.</p>
             
@@ -93,17 +169,19 @@
                 <figcaption>Fig.2 - Cris talks to Joana in class.</figcaption>
                 <img src="crisseofende.jpg" width="300" height="170" alt="Picture of Cris and Alicia talking" style="width:auto;">
                 <figcaption>Fig.3 - Cris confronts a stranger on social media</figcaption>
-              </picture>-->
+              </picture>
             
             </div>
             <p>Cris' season includes some of the musical tracks most beloved by fans of the series. One such song is <i>Hurricanes</i> by singer-songwriter <b>Dido.</b></p>
             <p>
                 <!--<audio controls>
                     <source src="Hurricanes.mp3">
-                </audio>-->
+                </audio>
             </p>
         </section>
 
+    -->
+<!--
             </body>
 
             <footer>
@@ -111,4 +189,4 @@
             
             </footer>
             
-            
+      -->      

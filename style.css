@@ -1,24 +1,210 @@
+.background {
+    background-color: rgb(253, 242, 233)
+}
+
+.header1 {
+    text-align: center;
+    height: 125px;
+    width: 100%;
+    margin-top: 40px;
+    Background-color: rgb(253, 242, 233);
+    
+}
+
+.header1 {
+    text-align: center;
+    text-size-adjust: none;
+    font-weight: bold;
+    font-size: 105px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightsalmon;
+    margin: 20px;
+}
+.header2 {
+    text-align: left;
+    text-size-adjust: none;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(233, 150, 122);
+    margin: 18px;
+}
+
+.header3 {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  color: grey;
+}
+
+.paragraph1 {
+    margin: 19px;
+    font-size: 18px;
+    font-family: Georgia, serif;
+}
+
+.image1 {
+    width: 600px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.image2 {
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.image3 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.column1 {
+    margin-left: 110px;
+    margin-right: 110px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: lightsalmon;
+    border-style: solid;
+    border-color: lightsalmon;
+}
+
+.navigation a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: auto;
+    padding: 5px 10px;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button1 {
+    width: 100px;
+    height: 2px;
+    margin: 30px;
+    background-color: red;
+    position: relative;
+  }
+
+
+/* columns */
+
+.column {
+    float: left;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+/* end columns https://www.w3schools.com/css/css_website_layout.asp */
+
+
+.column2 {
+    float: left;
+  }
+  
+  .column2.left {
+    width: 30%;
+  }
+  
+  .column2.right {
+    width: 30%;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column2.left, .column2.right {
+      width: 100%;
+    }
+  }
+
+
+
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    text-align: center;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+
+
+
+
+
+
+  /*
+
 a.pseudo:visited {
-    color: blue;
+    color: white;
 }
 
 a.pseudo:hover {
-    color: red;
+    color: lightblue;
 }
 
 a.pseudo:active {
-    color: black
+    color: white
 }
 
-h2.titlebox {
-    background-color: lightsteelblue;
-    width: 350px;
-    height: 32px;
-    border: 18px solid black;
-    padding: 5px;
-    margin: 25px;
-
-}
 
 a.button1 {
     background-color: lavender;
@@ -29,10 +215,10 @@ a.button1 {
 
 h2 {
     text-align: center;
-    text-decoration-line: underline;
-    text-decoration-color: navy;
-    text-decoration-style: wavy;
-    text-decoration-thickness: 2px;
+    text-decoration: overline underline;
+    text-decoration-color: rosybrown;
+    text-decoration-style: dotted;
+    text-decoration-thickness:3px;
 }
 
 h3 {
@@ -87,15 +273,7 @@ a.pseudo {
 }
 
 /* figure out how to only make it go left and right */
-.button1 {
-    width: 100px;
-    height: 2px;
-    background-color: red;
-    position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: 3;
-  }
+
 
   .absolute {
     position: absolute;
